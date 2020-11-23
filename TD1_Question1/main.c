@@ -2,11 +2,17 @@
 #include <stdlib.h>
 
 main()
+{
+    int A = 1;
+     int B = 2;
+     int C = 3;
+     int *P1, *P2;
+        P1=&A;
+     printf("%d, %p, %d", P1, &P1, *P1);
+}
+/*main()
  {
- int A = 1;
- int B = 2;
- int C = 3;
- int *P1, *P2;
+
  P1=&A;
  P2=&C;
  *P1=(*P2)++;
@@ -35,3 +41,8 @@ P2=&B           3 2 4 &C &B
 A=++*P2**P1     24 4 6 &C &B
 P1=&A           24 4 6 &A &B
 *P2=*P1/=*P2    6 6 6 &A &B
+
+
+
+P2=&C
+*P2=C=3*/
